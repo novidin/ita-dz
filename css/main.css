@@ -1,6 +1,4 @@
 @import url(./reset.css);
-@import url(./fonts.css);
-@import url(./settings.css);
 
 body {
     font-family: sans-serif;
@@ -31,12 +29,12 @@ header, footer {
 }
 
 .join {
-    width: 90px;
     position: fixed;
-    top: 85px;
+    bottom: 45px;
     right: 2px;
+    width: 90px;
     text-align: center;
-    background-color: rgba(75, 190, 75, .7);
+    background-color: rgba(75, 190, 75, .9);
 }
 
 .join a {
@@ -57,6 +55,10 @@ aside {
 aside ul {
     padding: 10px;
     list-style-type: disc;
+}
+
+.burger {
+    display: none;
 }
 
 .content {
@@ -92,8 +94,8 @@ aside ul {
 }
 
 .video-box {
-    height: 240px;
     margin-bottom: 15px;
+    height: 240px;
 }
 
 .video-box video, .video-box iframe {
@@ -135,46 +137,49 @@ aside ul {
         width: 35px;
         height: 20px;
         z-index: 10;
-        background-color: rgba(75, 190, 75, .7);
+        background-color: rgba(75, 190, 75, .9);
         cursor: pointer;
     }
     .burger::before,
-    .burger::after{
+    .burger::after {
         content: '';
-        background-color: white;
         position: absolute;
+        left: 15px;
         width: 60%;
         height: 2px;
-        left: 15px;
+        background-color: white;
         transition: all 0.3s ease 0s;
     }
 
-    .burger span{
+    .burger span {
         position: absolute;
-        background-color: white;
-        width: 60%;
-        height: 2px;
         left: 15px;
         top: 14px;
-        /* transition: all 0.3s ease 0s; */
+        width: 60%;
+        height: 2px;
+        background-color: white;
     }
-    .burger::before{
+
+    .burger::before {
         top: 5px;
     }
-    .burger::after{
+
+    .burger::after {
         bottom: 5px;
     }
-    .burger.active span{
+
+    .burger.active span {
         transform: scale(0);
-        
     }
-    .burger.active::before{
-        transform: rotate(45deg);
+
+    .burger.active::before {
         top: 13px;
+        transform: rotate(45deg);
     }
-    .burger.active::after{
-        transform: rotate(-45deg);
+
+    .burger.active::after {
         bottom: 14px;
+        transform: rotate(-45deg);
     }
 
     .video-box video, .video-box iframe {
