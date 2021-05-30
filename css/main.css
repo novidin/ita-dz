@@ -183,6 +183,6 @@ aside ul {
     }
 
     .video-box video, .video-box iframe {
-        width: 300px;
+        width: 80vw;
     }
 }
