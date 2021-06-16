@@ -1,1 +1,32 @@
 @import url(./reset.css);
+
+.stars1, .stars2 {
+  display: inline-flex;
+  background-color: rgb(250, 196, 208);
+}
+
+.stars1 svg, .stars2 svg{
+  width: 50px;
+  fill: #fff;
+}
+
+.stars1:hover svg{
+  fill: red;
+}
+.stars1 .star:hover ~ svg {
+  fill: #fff;
+  cursor: pointer;
+}
+
+/* .stars svg:hover ~ svg {
+  fill: red;
+  cursor: pointer;
+} */
+
+.stars2:hover svg{
+  fill: red;
+}
+.stars2 svg:hover ~ svg {
+  fill: #fff;
+  cursor: pointer;
+}
