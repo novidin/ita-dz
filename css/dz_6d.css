@@ -1,32 +1,30 @@
-@import url(./reset.css);
+@import url(./main.css);
 
-.stars1, .stars2 {
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.stars {
   display: inline-flex;
-  background-color: rgb(250, 196, 208);
 }
 
-.stars1 svg, .stars2 svg{
-  width: 50px;
+.stars svg {
+  width: 30px;
   fill: #fff;
+  stroke: red;
+  stroke-width: 10px;
 }
 
-.stars1:hover svg{
+.stars:hover svg{
   fill: red;
-}
-.stars1 .star:hover ~ svg {
-  fill: #fff;
   cursor: pointer;
 }
 
-/* .stars svg:hover ~ svg {
-  fill: red;
-  cursor: pointer;
-} */
-
-.stars2:hover svg{
-  fill: red;
-}
-.stars2 svg:hover ~ svg {
+.stars svg:hover ~ svg {
   fill: #fff;
   cursor: pointer;
 }

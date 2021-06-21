@@ -1,0 +1,127 @@
+@import url(./main.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: red;
+}
+
+/* link1 */
+
+.links1 ul {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.links1 li {
+  margin-left: 20px;
+  padding: 5px 27px 5px 0;
+  position: relative;
+}
+
+.links1 li::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    margin-left: 20px;
+    height: 26px;
+    width: 3px;
+    background-color: red;
+}
+
+.links1 li:last-child::after {
+  content: none;
+}
+/* links2 */
+
+.links2 ul{
+  margin: 40px;
+}
+
+.links2 li {
+  margin-left: 20px;
+  padding: 5px 20px 5px 0;
+  display: inline-block;
+  border-right: 3px solid red;
+}
+
+.links2 li:last-child {
+  border-right: none;
+}
+
+/* links3 */
+
+.links3 ul{
+  margin: 40px;
+}
+
+.links3 li {
+  margin-left: 20px;
+  padding: 5px 20px 5px 0;
+  float: left;
+}
+
+.links3 li:nth-child(even) {
+  margin: 0 4px 0 0;
+  padding: 1px;
+  width: 3px;
+  height: 26px;
+  background-color: red;
+}
+
+.links3::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* links4 */
+
+.links4 ul {
+  margin: 40px;
+}
+
+.links4 li {
+  display: inline;  
+}
+.links4 a, .links4 span {
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.links4 span {
+  padding-left: 3px;
+  background-color: red;
+}
+
+/* links5 */
+
+.links5 table {
+  margin: 40px;
+  margin-left: 36px;
+}
+
+.links5 td {
+  padding-left: 4px;
+  height: 27px;
+  border-right: 3px solid red;
+}
+
+.links5 td:last-child{
+  border-right: none;
+}
+
+.links5 a {
+  margin: 0 20px;
+}
+
