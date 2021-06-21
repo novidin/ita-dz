@@ -17,33 +17,33 @@ td {
 
 tr:nth-child(even) td:nth-child(odd) {
   background-color: black;
-  height: 10px;
-  width: 10px;
+  height: 50px;
+  width: 50px;
 }
 
 tr:nth-child(odd) td:nth-child(even) {
   background-color: black;
-  height: 10px;
-  width: 10px;
+  height: 50px;
+  width: 50px;
 }
 
 tr:first-child td:nth-child(even){
   background-color: green;
-  height: 5px;
+  height: 25px;
 }
 
 tr:last-child td:nth-child(odd){
   background-color: green;
-  height: 5px;
+  height: 25px;
 }
 
 tr:nth-child(even) td:first-child {
   background-color: green;
-  width: 5px;
+  width: 25px;
 }
 tr:nth-child(odd) td:last-child {
   background-color: green;
-  width: 5px;
+  width: 25px;
 }
 
 
