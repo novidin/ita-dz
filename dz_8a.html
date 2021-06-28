@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/dz_8a.css">
+  <title>DZ-8a</title>
+</head>
+
+<body>
+  <form class="post_form" action="" method="post">
+    <h2>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</h2>
+    <ul>
+      <li class="title">
+        <label class="label" for="title">
+          <span>Название статьи:</span>
+        </label>
+        <input type="text" name="title" placeholder="Введите название статьи"/>
+      </li>
+      <li class="heading">
+        <label class="label" for="heading">
+          <span>Рубрика:</span>
+        </label>
+        <select name="heading">
+          <option selected value="программирование">программирование</option>
+          <option value="дизайн">дизайн</option>
+          <option value="СЕО">СЕО</option>
+          <option value="тестирование">тестирование</option>
+        </select>
+      </li>
+      
+      <li class="posting">
+        <label class="label" for="posting">
+          <span>Публикация:</span>
+        </label>
+        <label>
+          <input type="radio" name="posting" value="на сайте" />
+          <span class="input-span">на сайте</span>
+        </label>
+        <label>
+          <input type="radio" name="posting" value="в журнале" />
+          <span class="input-span">в журнале</span>
+        </label>
+        <label>
+          <input type="radio" name="posting" value="на сайте и в журнале" />
+          <span class="input-span">на сайте и в журнале</span>
+        </label>
+      </li>
+      <li class="allow-comments">
+        <label class="label checkbox-label">
+          <input type="checkbox" checked />
+          <span>Разрешить комментарии:</span>
+        </label>
+      </li>
+      <li class="text">
+        <label class="label" for="text">
+          <span>Текст статьи:</span>
+        </label>
+        <textarea name="text" placeholder="Введите текст статьи"></textarea>
+      </li>
+      <input class="button" type="submit" value="Опубликовать">
+    </ul>
+
+
+  </form>
+  <footer>
+    <div class="back-link">
+      <a href="./index.html">НА ГЛАВНУЮ</a>
+    </div>
+  </footer>
+</body>
+
+</html>
