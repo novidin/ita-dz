@@ -1,0 +1,179 @@
+@import url(./main.css);
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+
+body {
+  font: bold 16px/1.6 'Signika', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.left-hand {
+  stroke: black;
+  transform-origin: 220px 210px;
+  transition: 1s;
+  animation: hand-go 1s  linear infinite;
+}
+
+.right-hand {
+  stroke: black;
+  transform-origin: 139px 180px;
+  transition: 1s;
+  animation: hand-go 1s  linear infinite .75s;
+}
+
+
+.head {
+  stroke: black;
+  display: block;
+  transition: 1s;
+  transform-origin: 180px 180px;
+  animation: head-go 1s linear infinite;
+}
+
+.right-foot {
+  transition: 1s;
+  animation: foot-go 1s linear infinite;
+}
+
+.left-foot {
+  transition: 1s;
+  animation: foot-go 1s linear infinite .75s;
+}
+
+.right-shadow,
+.left-shadow {
+  opacity: .9;
+}
+
+.right-shadow {
+  transition: 1s;
+  animation: shadow-go 1s linear infinite;
+}
+
+.left-shadow {
+  transition: 1s;
+  animation: shadow-go 1s linear infinite .75s;
+}
+
+.body,
+.right-hand,
+.tail {
+  stroke: black;
+}
+
+.right-eye {
+  transform-origin: 169px 134px;
+  transition: 1s;
+}
+
+.left-eye {
+  transform-origin: 185px 134px;
+  transition: 1s;
+}
+
+.tail {
+  transform-origin: 180px 134px;
+  animation: tail-go 1s linear infinite;
+}
+
+.hover {
+  fill: red;
+  transform-origin: 180px 134px;
+  animation: float .4s ease-in-out infinite; 
+  transition: 1s;
+}
+
+.hello {
+  fill: green;
+  transform-origin: 180px 134px;
+  opacity: 0; 
+  transition: 1s;
+}
+
+.crazy-mouse:hover .left-hand {animation: hi 2s linear 1s;}
+
+.crazy-mouse:hover .head {
+  animation: none;
+  transform-origin: 180px 180px;
+  transform: rotate(-15deg);
+  transition-delay: 1s;
+}
+
+.crazy-mouse:hover .right-eye,
+.crazy-mouse:hover .left-eye {
+  animation: look 1s linear;
+}
+
+.crazy-mouse:hover .right-hand,
+.crazy-mouse:hover .tail,
+.crazy-mouse:hover .right-foot,
+.crazy-mouse:hover .left-foot,
+.crazy-mouse:hover .left-shadow,
+.crazy-mouse:hover .right-shadow {
+  animation: none;
+}
+
+.crazy-mouse:hover .hover {
+  opacity: 0;
+  animation: none;
+}
+
+.crazy-mouse:hover .hello {
+  opacity: 1;
+}
+
+ @keyframes float {
+  0%,100%{ transform:none; }
+  33%{ transform:rotate(2deg) }
+  66%{ transform:rotate(-2deg) }
+}
+
+
+@keyframes tail-go {
+  50% {transform: scale(-1, 1);}
+  100% {transform: scale(1, 1);}
+}
+
+@keyframes foot-go {
+  50% {transform: translate(0, -5px);}
+  100% {transform: translate(0, 0);}
+}
+
+@keyframes shadow-go {
+  50% {opacity: .4;}
+  100% {opacity: .9;}
+}
+
+@keyframes head-go {
+  25% {transform: translate(5px, 0);}
+  75% {transform: translate(-5px, 0);}
+  100% {transform: translate(0, 0);}
+}
+
+@keyframes hand-go {
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+
+@keyframes hi {
+  25% {transform: translate(10px, -30px);}
+  35% {transform: translate(10px, -30px) rotate(-10deg);}
+  45% {transform: translate(10px, -30px) rotate(10deg);}
+  60% {transform: translate(10px, -30px) rotate(-10deg);}
+  75% {transform: translate(10px, -30px) rotate(10deg);}
+}
+
+
+@keyframes look {
+  25% {transform: scale(1.2);}
+  50% {transform: scale(1.1);}
+  75% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+
